@@ -1,8 +1,6 @@
 #Predicting Titanic survival rate using logistic regression
-library(caret)
 library(mice)
 library(caTools)
-library(ggplot2)
 
 #Load the training data
 #setwd('Provide the folder name which contains train.csv')
@@ -13,7 +11,7 @@ names(titanic)
 titanic = titanic[,c(2,3,5,6,7,8,10)]
 names(titanic)
 
-#Determing the modeling type of selected variables
+#Determing the modeling type of selected features
 str(titanic)
 
 #Change the modeling type of Survived and Pclass
